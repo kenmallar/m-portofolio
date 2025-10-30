@@ -1,0 +1,24 @@
+---
+import { frontend } from "@data/frontend.json";
+import { music } from "@data/music.json";
+import { shows } from "@data/shows.json";
+import Layout from "../../layouts/Layout.astro";
+
+export function getStaticPaths() {
+  const pages = [...music.projects, ...frontend.projects, ...shows.projects];
+
+  return pages.map(({ project, name, description }) => {
+    return {
+      params: { project },
+      props: { name, description },
+    };
+  });
+}
+
+const { name, description } = Astro.props;
+---
+
+<Layout name="erwer">
+  {name}
+  {description}
+</Layout>

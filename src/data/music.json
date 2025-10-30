@@ -4,6 +4,7 @@
     "intro": "Je parle beaucoup dans la vie, mais dans les microphones aussi.",
     "projects": [
       {
+        "project": "scuze",
         "name": "SCUZE!",
         "period": "2025",
         "cover": "music/scuze/music-scuze-cover.jpg",
@@ -24,6 +25,7 @@
         }
       },
       {
+        "project": "costauds",
         "name": "Les Costauds",
         "cover": "music/costauds/music-costauds-cover.jpg",
         "period": "2017 - 2018",
@@ -45,6 +47,7 @@
         }
       },
       {
+        "project": "superpunk",
         "name": "Super Punk",
         "cover": "music/superpunk/music-superpunk-cover.jpg",
         "period": "2015 - 2019",
@@ -65,6 +68,7 @@
         }
       },
       {
+        "project": "personne",
         "name": "Personne",
         "cover": "music/personne/music-personne-cover.jpg",
         "period": "2010 - 2013",
@@ -84,6 +88,7 @@
         }
       },
       {
+        "project": "gxp",
         "name": "Guerilla Poubelle",
         "cover": "music/gxp/music-gxp-cover.jpg",
         "period": "2008 - 2012",

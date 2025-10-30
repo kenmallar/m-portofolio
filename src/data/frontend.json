@@ -4,6 +4,7 @@
     "intro": "Pour un internet plus cool.",
     "projects": [
       {
+        "project": "please-fix",
         "name": "Please Fix",
         "period": "2019 - 2025",
         "cover": "fe/pf/fe-pf-cover.jpg",
@@ -29,6 +30,7 @@
         }
       },
       {
+        "id": "nvizzio",
         "name": "Nvizzio",
         "period": "2020",
         "cover": "fe/nvizzio/fe-nvizzio-cover.jpg",
@@ -52,6 +54,7 @@
         }
       },
       {
+        "project": "ohrwurm",
         "name": "Ohrwurm",
         "period": "2020",
         "cover": "fe/earworm/fe-earworm-cover.jpg",
@@ -78,6 +81,7 @@
         }
       },
       {
+        "project": "revera",
         "name": "Revera",
         "period": "2019",
         "cover": "fe/revera/fe-revera-cover.jpg",
@@ -101,6 +105,7 @@
         }
       },
       {
+        "project": "utown",
         "name": "Utown",
         "period": "2020",
         "cover": "fe/utown/fe-utown-cover.jpg",

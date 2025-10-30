@@ -1,0 +1,17 @@
+---
+import Card from "../card/card.astro";
+import "./section.css";
+
+const { title, projects } = Astro.props;
+---
+
+<section class="section">
+  <h3 class="section__title">{title}</h3>
+  <div class="cards">
+    {
+      projects.map((p: any) => (
+        <Card id={p.project} name={p.name} cover={p.cover} />
+      ))
+    }
+  </div>
+</section>

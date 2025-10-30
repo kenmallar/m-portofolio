@@ -1,0 +1,23 @@
+.card {
+  position: relative;
+
+  a {
+    position: absolute;
+    inset: 0;
+  }
+
+  .card__img {
+    overflow: hidden;
+    max-height: 22rem;
+  }
+
+  img {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .card__title {
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+  }
+}

@@ -4,6 +4,7 @@
     "intro": "Parce que j'aime les films louches et le partage.",
     "projects": [
       {
+        "project": "bdm",
         "name": "Le Battle de Doublage du Millénaire",
         "cover": "shows/bdm/shows-bdm-cover.jpg",
         "description": [
@@ -32,6 +33,7 @@
         }
       },
       {
+        "project": "pcq",
         "name": "Le Petit Cinéma Qualité+",
         "cover": "shows/pcq/shows-pcq-cover.jpg",
         "description": [
@@ -60,6 +62,7 @@
         }
       },
       {
+        "project": "karaoken",
         "name": "Le Karaoken",
         "cover": "shows/karaoken/shows-karaoken-cover.jpg",
         "description": [

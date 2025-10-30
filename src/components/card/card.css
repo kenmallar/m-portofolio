@@ -1,0 +1,24 @@
+.card {
+  position: relative;
+  overflow: hidden;
+
+  .card__link {
+    position: absolute;
+    inset: 0;
+  }
+
+  .card__cover {
+    overflow: hidden;
+    max-height: 24rem;
+  }
+
+  .card__cover {
+    margin-bottom: 0.5rem;
+  }
+
+  .card__title {
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+  }
+}
