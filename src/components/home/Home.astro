@@ -1,4 +1,5 @@
 ---
+import Header from "@components/header/header.astro";
 import { frontend } from "@data/frontend.json";
 import { music } from "@data/music.json";
 import { shows } from "@data/shows.json";
@@ -9,10 +10,7 @@ const categories = [frontend, shows, music];
 ---
 
 <div class="container">
-  <header>
-    <div class="">Logo</div>
-    <div class="">Nav</div>
-  </header>
+  <Header />
   <main>
     {categories.map((c) => <Section title={c.title} projects={c.projects} />)}
   </main>

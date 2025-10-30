@@ -6,7 +6,7 @@ const { title, projects } = Astro.props;
 ---
 
 <section class="section">
-  <h3 class="section__title">{title}</h3>
+  <h3 class="section__title" id={title}>{title}</h3>
   <div class="cards">
     {
       projects.map((p: any) => (

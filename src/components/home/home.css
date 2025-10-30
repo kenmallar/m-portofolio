@@ -1,12 +1,3 @@
-header {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  background-color: wheat;
-  height: 6.5rem;
-}
-
 .container {
   display: flex;
   flex-direction: column;
