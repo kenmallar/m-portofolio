@@ -1,0 +1,128 @@
+{
+  "frontend": {
+    "title": "Front-End",
+    "intro": "Pour un internet plus cool.",
+    "projects": [
+      {
+        "name": "Please Fix",
+        "period": "2019 - 2025",
+        "cover": "fe/pf/fe-pf-cover.jpg",
+        "description": [
+          "J'ai rejoint l'équipe du projet PleaseFix en 2019 avec pour mandat de créer le thème principal de l'application, de façon à pouvoir l'offrir à toute taille de studio, du AAA au studio indépendant.",
+          "Durant cette mission, j'ai mis en place une standardisation des pratiques de développement de composants UI, un flux de production et renforcé la communication entre développeurs et designers, notamment grâce à l'utilisation de Storybook.",
+          "J'ai aussi effectué le refactorisation de la majorité des composants UI du projet, dépendant des ajouts de fonctionnalités de la road map"
+        ],
+        "pics": ["fe/pf/fe-pf-1.png"],
+        "details": [
+          {
+            "title": "Role",
+            "text": "Développeur Front-end et UI"
+          },
+          {
+            "title": "Stack",
+            "text": "Typescript, React, Sass, Storybook, Gitlab, Figma"
+          }
+        ],
+        "link": {
+          "label": "PleaseFix",
+          "url": "https://turbulent.ca/fr/craft/pleasefix/"
+        }
+      },
+      {
+        "name": "Nvizzio",
+        "period": "2020",
+        "cover": "fe/nvizzio/fe-nvizzio-cover.jpg",
+        "description": [
+          "Pour le compte de l'agence Kantaloup, j'ai repris le travail de développement de certaines sections du site de son client, le studio de jeux vidéos montréalais Nvizzio."
+        ],
+        "pics": ["fe/nvizzio/fe-nvizzio-1.png"],
+        "details": [
+          {
+            "title": "Role",
+            "text": "Développeur front-end et UI designer"
+          },
+          {
+            "title": "Stack",
+            "text": "Javascript, Html, Css, Wordpress"
+          }
+        ],
+        "link": {
+          "label": "Nvizzio",
+          "url": "https://nvizzio.com/"
+        }
+      },
+      {
+        "name": "Ohrwurm",
+        "period": "2020",
+        "cover": "fe/earworm/fe-earworm-cover.jpg",
+        "description": [
+          "La pandémie nous ayant pris par surprise, j'ai eu l'occasion de me former sur Vue 2 en mettant en place qui me tenait à coeur depuis quelques années.",
+          "En effet, je voulais créer un projet dans lequel j'allierais mon style d'illustrateur, mon amour pour la recherche de vidéos louches et le développement web.",
+          "Le résultat a donné cette machine à vers d'oreille ('ohrwurm' en allemand), qui non seulement a su occuper mes amis, mais aussi semer la confusion sur le plateau de l'émission \"Salut, bonjour!\" lors de la présentation du projet dans l'émission du 20 mai 2020",
+          "Je travaille à remettre cette machine en fonction en la mettant à jour à Vue 3, pour votre plus grand bonheur."
+        ],
+        "pics": ["fe/earworm/fe-earworm-1.png", "fe/earworm/fe-earworm-2.png"],
+        "details": [
+          {
+            "title": "Role",
+            "text": "Illustrateur, Développeur front-end, UI designer"
+          },
+          {
+            "title": "Stack",
+            "text": "Vue 2, Sass, Wordpress"
+          }
+        ],
+        "link": {
+          "label": "Extrait de l'émission \"Salut, Bonjour!\"",
+          "url": "https://www.youtube.com/watch?v=WaIcm5-3sec"
+        }
+      },
+      {
+        "name": "Revera",
+        "period": "2019",
+        "cover": "fe/revera/fe-revera-cover.jpg",
+        "description": [
+          "Pour le compte de l'agence Sidlee, j'ai été mandaté par l'agence pour aider l'équipe au développement du site de son client Revera."
+        ],
+        "pics": ["fe/revera/fe-revera-1.png"],
+        "details": [
+          {
+            "title": "Role",
+            "text": "Développeur front-end"
+          },
+          {
+            "title": "Stack",
+            "text": "Php, Sass"
+          }
+        ],
+        "link": {
+          "label": "Revera Living",
+          "url": "https://web.archive.org/web/20230731193900/http://reveraliving.com/"
+        }
+      },
+      {
+        "name": "Utown",
+        "period": "2020",
+        "cover": "fe/utown/fe-utown-cover.jpg",
+        "description": [
+          "Afin de faire revenir la tendance du webcomic sur la toile, j'ai développé pour la bédéiste Cab un site Wordpress sur lequel elle pourrait publier son prochain ouvrage, Utown."
+        ],
+        "pics": ["fe/utown/fe-utown-1.png"],
+        "details": [
+          {
+            "title": "Role",
+            "text": "Développeur front-end"
+          },
+          {
+            "title": "Stack",
+            "text": "Javascript, Php, Sql, Sass, Wordpress"
+          }
+        ],
+        "link": {
+          "label": "Utown",
+          "url": "http://www.utowncomic.com/"
+        }
+      }
+    ]
+  }
+}
