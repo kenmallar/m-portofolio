@@ -34,8 +34,3 @@ section {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-
-footer {
-  background-color: red;
-  height: 6.5rem;
-}
