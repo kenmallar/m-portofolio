@@ -1,4 +1,9 @@
 .nav {
   display: flex;
   flex-direction: row;
+  gap: 1rem;
+
+  .nav__link {
+    text-decoration: none;
+  }
 }

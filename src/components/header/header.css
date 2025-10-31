@@ -3,11 +3,12 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: wheat;
-  height: 6.5rem;
+  height: 8rem;
 
   .header__logo {
+    max-width: 300px;
   }
+
   .header__nav {
   }
 }

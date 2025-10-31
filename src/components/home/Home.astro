@@ -12,7 +12,11 @@ const categories = [frontend, shows, music];
 <div class="container">
   <Header />
   <main>
-    {categories.map((c) => <Section title={c.title} projects={c.projects} />)}
+    {
+      categories.map((c) => (
+        <Section category={c.category} title={c.title} projects={c.projects} />
+      ))
+    }
   </main>
   <footer>Football</footer>
 </div>

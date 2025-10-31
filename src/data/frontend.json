@@ -1,5 +1,6 @@
 {
   "frontend": {
+    "category": "frontend",
     "title": "Front-End",
     "intro": "Pour un internet plus cool.",
     "projects": [

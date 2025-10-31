@@ -1,9 +1,26 @@
 ---
+import { frontend } from "@data/frontend.json";
+import { music } from "@data/music.json";
+import { shows } from "@data/shows.json";
 import "./nav.css";
+
+const categories = [frontend, shows, music];
 ---
 
 <ul class="nav">
-  <li><a href="#Musique">Logo Nav</a></li>
-  <li><a href="#Spectacles">Logo Nav</a></li>
-  <li><a href="#">Logo Nav</a></li>
+  {
+    categories.map((c) => (
+      <li>
+        <a class="nav__link" href={"#" + c.category}>
+          {c.title}
+        </a>
+      </li>
+    ))
+  }
+  <li>
+    <a class="nav__link" href="https://dev.kenmallar.com">À propos</a>
+  </li>
+  <li>
+    <a class="nav__link" href="https://dev.kenmallar.com">CV</a>
+  </li>
 </ul>
