@@ -1,8 +1,10 @@
 ---
+import Container from "@components/container/container.astro";
 import { frontend } from "@data/frontend.json";
 import { music } from "@data/music.json";
 import { shows } from "@data/shows.json";
 import Layout from "../../layouts/Layout.astro";
+import "../../styles/main.css";
 
 export function getStaticPaths() {
   const pages = [...music.projects, ...frontend.projects, ...shows.projects];
@@ -18,7 +20,9 @@ export function getStaticPaths() {
 const { name, description } = Astro.props;
 ---
 
-<Layout name="erwer">
-  {name}
-  {description}
+<Layout name={name}>
+  <Container>
+    <h1>{name}</h1>
+    {description}
+  </Container>
 </Layout>
