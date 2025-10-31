@@ -1,23 +1,12 @@
-.card {
-  position: relative;
+.sections {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+}
 
-  a {
-    position: absolute;
-    inset: 0;
-  }
-
-  .card__img {
-    overflow: hidden;
-    max-height: 22rem;
-  }
-
-  img {
-    width: 100%;
-    margin-bottom: 1rem;
-  }
-  .card__title {
-    text-align: center;
-    font-weight: bold;
-    font-style: italic;
+.section {
+  h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
   }
 }

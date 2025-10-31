@@ -1,19 +1,20 @@
 .card {
   position: relative;
-  overflow: hidden;
 
-  .card__link {
+  a {
     position: absolute;
     inset: 0;
   }
 
   .card__cover {
     overflow: hidden;
-    max-height: 24rem;
+    max-height: 22rem;
   }
 
-  .card__cover {
-    margin-bottom: 0.5rem;
+  img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
   }
 
   .card__title {

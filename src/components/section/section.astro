@@ -1,4 +1,5 @@
 ---
+import Cards from "@components/cards/cards.astro";
 import Card from "../card/card.astro";
 import "./section.css";
 
@@ -7,11 +8,11 @@ const { category, title, projects } = Astro.props;
 
 <section class="section">
   <h3 class="section__title" id={category}>{title}</h3>
-  <div class="cards">
+  <Cards>
     {
       projects.map((p: any) => (
         <Card id={p.project} name={p.name} cover={p.cover} />
       ))
     }
-  </div>
+  </Cards>
 </section>
