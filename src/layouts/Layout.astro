@@ -1,5 +1,5 @@
 ---
-const { name } = Astro.props;
+const { className, name } = Astro.props;
 ---
 
 <!doctype html>
@@ -11,7 +11,7 @@ const { name } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>Ken Mallar • {name}</title>
   </head>
-  <body>
+  <body class={className}>
     <slot />
   </body>
 </html>

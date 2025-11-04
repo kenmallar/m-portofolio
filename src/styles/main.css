@@ -2,7 +2,3 @@
 @import "./variables.css";
 @import "./html/loader.css";
 @import "./typo.css";
-
-:root {
-  --body-bg-color: #605f5f;
-}
