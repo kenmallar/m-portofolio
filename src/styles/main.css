@@ -4,5 +4,5 @@
 @import "./typo.css";
 
 :root {
-  --body-bg-color: var(--primary-color);
+  --body-bg-color: #605f5f;
 }

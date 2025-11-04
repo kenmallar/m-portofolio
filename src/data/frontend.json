@@ -14,7 +14,7 @@
           "Durant cette mission, j'ai mis en place une standardisation des pratiques de développement de composants UI, un flux de production et renforcé la communication entre développeurs et designers, notamment grâce à l'utilisation de Storybook.",
           "J'ai aussi effectué le refactorisation de la majorité des composants UI du projet, dépendant des ajouts de fonctionnalités de la road map"
         ],
-        "pics": ["fe/pf/fe-pf-1.png"],
+        "pics": ["/fe/pf/fe-pf-1.png"],
         "details": [
           {
             "title": "Role",
@@ -38,7 +38,7 @@
         "description": [
           "Pour le compte de l'agence Kantaloup, j'ai repris le travail de développement de certaines sections du site de son client, le studio de jeux vidéos montréalais Nvizzio."
         ],
-        "pics": ["fe/nvizzio/fe-nvizzio-1.png"],
+        "pics": ["/fe/nvizzio/fe-nvizzio-1.png"],
         "details": [
           {
             "title": "Role",
@@ -65,7 +65,7 @@
           "Le résultat a donné cette machine à vers d'oreille ('ohrwurm' en allemand), qui non seulement a su occuper mes amis, mais aussi semer la confusion sur le plateau de l'émission \"Salut, bonjour!\" lors de la présentation du projet dans l'émission du 20 mai 2020",
           "Je travaille à remettre cette machine en fonction en la mettant à jour à Vue 3, pour votre plus grand bonheur."
         ],
-        "pics": ["fe/earworm/fe-earworm-1.png", "fe/earworm/fe-earworm-2.png"],
+        "pics": ["/fe/earworm/fe-earworm-1.png", "fe/earworm/fe-earworm-2.png"],
         "details": [
           {
             "title": "Role",
@@ -89,7 +89,7 @@
         "description": [
           "Pour le compte de l'agence Sidlee, j'ai été mandaté par l'agence pour aider l'équipe au développement du site de son client Revera."
         ],
-        "pics": ["fe/revera/fe-revera-1.png"],
+        "pics": ["/fe/revera/fe-revera-1.png"],
         "details": [
           {
             "title": "Role",
@@ -113,7 +113,7 @@
         "description": [
           "Afin de faire revenir la tendance du webcomic sur la toile, j'ai développé pour la bédéiste Cab un site Wordpress sur lequel elle pourrait publier son prochain ouvrage, Utown."
         ],
-        "pics": ["fe/utown/fe-utown-1.png"],
+        "pics": ["/fe/utown/fe-utown-1.png"],
         "details": [
           {
             "title": "Role",

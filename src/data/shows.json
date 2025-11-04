@@ -8,16 +8,16 @@
         "project": "bdm",
         "name": "Le Battle de Doublage du Millénaire",
         "period": "Depuis 2023",
-        "cover": "shows/bdm/shows-bdm-cover.jpg",
+        "cover": "/shows/bdm/shows-bdm-cover.jpg",
         "description": [
           "Mon projet Le Petit Cinéma Qualité+ et la troupe d'improvisation des Lundis allient leur forces pour proposer une soirée unique en son genre: 8 équipes d'improvisateurs refont à tour de rôle les dialogues et les bruitages de de vidéos contestables, le tout dans un format de tournoi de lutte.",
           "D'extraits de films louches aux publicités discutables, en passant par d'exquises pépites audiovisuelles issues de VHS poussiéreuses, c'est le public qui est seul juge de ce grand tournoi de doublage, qui affiche complet à chacune de ses représentations."
         ],
         "pics": [
-          "shows/bdm/shows-bdm-3.jpg",
-          "shows/bdm/shows-bdm-2.jpg",
-          "shows/bdm/shows-bdm-1.jpg",
-          "shows/bdm/shows-bdm-4.jpg"
+          "/shows/bdm/shows-bdm-3.jpg",
+          "/shows/bdm/shows-bdm-2.jpg",
+          "/shows/bdm/shows-bdm-1.jpg",
+          "/shows/bdm/shows-bdm-4.jpg"
         ],
         "details": [
           {
@@ -38,16 +38,16 @@
         "project": "pcq",
         "name": "Le Petit Cinéma Qualité+",
         "period": "Depuis 2014",
-        "cover": "shows/pcq/shows-pcq-cover.jpg",
+        "cover": "/shows/pcq/shows-pcq-cover.jpg",
         "description": [
           "Fort de plus de 50 projections au travers le Québec et l'Europe, le Petit Cinéma Qualité est une projection itinérante et improvisée dont vous êtes le héros/l'héroïne.",
           "Le spectacle est ponctué implique le public (imitations douteuses, karaoké impromptu ou encore doublage de scènes de films) car c'est lui qui décide du cours de la projection!",
           "Ce divertissement est aussi proposé dans un format de bingo, où les prix à remporter font la promotion de la culture ou du commerce local."
         ],
         "pics": [
-          "shows/pcq/shows-pcq-2.jpg",
-          "shows/pcq/shows-pcq-1.jpg",
-          "shows/pcq/shows-pcq-3.jpg"
+          "/shows/pcq/shows-pcq-2.jpg",
+          "/shows/pcq/shows-pcq-1.jpg",
+          "/shows/pcq/shows-pcq-3.jpg"
         ],
         "details": [
           {
@@ -68,15 +68,15 @@
         "project": "karaoken",
         "name": "Le Karaoken",
         "period": "Depuis 2024",
-        "cover": "shows/karaoken/shows-karaoken-cover.jpg",
+        "cover": "/shows/karaoken/shows-karaoken-cover.jpg",
         "description": [
           "Ma version de l'animation d'un karaoké: des extraits de vidéos louches entre chaque chanteur, une playlist remplie à ras bord de plaisirs coupables et du air drum TRÈS approximatif.",
           " Au cas où vous vous posiez la question, ma toune préféré est Moskau de Dschinghis Khan et celle que je ne supporte plus est Zombie des Cranberries.",
           " Si ce n'était pas le cas, maintenant, vous savez."
         ],
         "pics": [
-          "shows/karaoken/shows-karaoken-1.jpg",
-          "shows/karaoken/shows-karaoken-2.jpg"
+          "/shows/karaoken/shows-karaoken-1.jpg",
+          "/shows/karaoken/shows-karaoken-2.jpg"
         ],
         "details": [
           {
