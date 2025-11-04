@@ -1,28 +1,82 @@
 ---
 import Container from "@components/container/container.astro";
+import Header from "@components/header/header.astro";
 import { frontend } from "@data/frontend.json";
 import { music } from "@data/music.json";
 import { shows } from "@data/shows.json";
 import Layout from "../../layouts/Layout.astro";
 import "../../styles/main.css";
+import "./project.css";
 
 export function getStaticPaths() {
   const pages = [...music.projects, ...frontend.projects, ...shows.projects];
 
-  return pages.map(({ project, name, description }) => {
-    return {
-      params: { project },
-      props: { name, description },
-    };
-  });
+  return pages.map(
+    ({ project, name, period, description, pics, details, link }) => {
+      return {
+        params: { project },
+        props: { name, description, period, pics, details, link },
+      };
+    }
+  );
 }
 
-const { name, description } = Astro.props;
+const { name, description, period, pics, details, link } = Astro.props;
 ---
 
 <Layout name={name}>
-  <Container>
-    <h1>{name}</h1>
-    {description}
-  </Container>
+  <div class="project">
+    <Header hideNav />
+    <Container className="project__container">
+      <div>
+        <h1 class="project__title">{name}</h1>
+        <span class="project__period">{period}</span>
+      </div>
+      <!-- <img class="project__image" src={`/${pics[0]}`} alt={name} /> -->
+      <div class="project__image"></div>
+      <div class="project__description">
+        <div class="project__details">
+          {
+            details.map((detail) => (
+              <div>
+                <h3>{detail.title}</h3>
+                <p>{detail.text}</p>
+              </div>
+            ))
+          }
+          <div>
+            <h3>Liens</h3>
+            <a
+              class="project__link"
+              href={link.url}
+              target="_blank"
+              rel="noopener"
+              ><span>{link.label}</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-box-arrow-up-right"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
+                ></path>
+                <path
+                  fill-rule="evenodd"
+                  d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
+                ></path>
+              </svg></a
+            >
+          </div>
+        </div>
+        <div>
+          {description.map((p) => <p>{p}</p>)}
+        </div>
+      </div>
+      <a class="project__back" href="/">← Retour</a>
+    </Container>
+  </div>
 </Layout>

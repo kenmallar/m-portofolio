@@ -1,7 +1,8 @@
 .nav {
   display: flex;
   flex-direction: row;
-  gap: 1rem;
+  align-items: center;
+  gap: 2rem;
 
   .nav__link {
     text-decoration: none;

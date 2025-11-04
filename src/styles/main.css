@@ -1,6 +1,8 @@
 @import "./normalize.css";
+@import "./variables.css";
 @import "./html/loader.css";
+@import "./typo.css";
 
 :root {
-  --body-bg-color: var(--white);
+  --body-bg-color: var(--primary-color);
 }

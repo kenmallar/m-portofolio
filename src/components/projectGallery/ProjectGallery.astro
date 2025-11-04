@@ -1,0 +1,12 @@
+---
+import Container from "@components/container/container.astro";
+const { pictures, alt } = Astro.props;
+
+import "./project-gallery.css";
+---
+
+<Container className="project-gallery" size="large">
+  <div class="project-gallery__list">
+    {pictures.map((imageSrc: string) => <img src={`/${imageSrc}`} alt={alt} />)}
+  </div>
+</Container>

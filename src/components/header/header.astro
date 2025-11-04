@@ -1,11 +1,13 @@
 ---
 import Nav from "@components/nav/nav.astro";
 import "./header.css";
+
+const { hideNav } = Astro.props;
 ---
 
 <header class="header">
   <a href="https://kenmallar.com"
-    ><img src="title.png" class="header__logo" /></a
+    ><img src="/title.png" class="header__logo" /></a
   >
-  <Nav />
+  {!hideNav && <Nav />}
 </header>

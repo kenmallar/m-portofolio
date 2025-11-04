@@ -1,0 +1,56 @@
+.project {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  .project__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .project__title {
+    font-size: 2.75rem;
+  }
+
+  .project__description {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    > * {
+      width: 100%;
+    }
+  }
+
+  .project__image {
+    background-color: red;
+    width: 100%;
+    height: 750px;
+  }
+
+  .project__details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+
+    > div {
+      width: 33.33%;
+    }
+  }
+
+  .project__link {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: underline;
+  }
+
+  .project__back {
+    display: block;
+    margin: 2rem 0 5rem;
+    font-style: italic;
+  }
+}

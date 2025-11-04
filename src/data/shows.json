@@ -7,6 +7,7 @@
       {
         "project": "bdm",
         "name": "Le Battle de Doublage du Millénaire",
+        "period": "Depuis 2023",
         "cover": "shows/bdm/shows-bdm-cover.jpg",
         "description": [
           "Mon projet Le Petit Cinéma Qualité+ et la troupe d'improvisation des Lundis allient leur forces pour proposer une soirée unique en son genre: 8 équipes d'improvisateurs refont à tour de rôle les dialogues et les bruitages de de vidéos contestables, le tout dans un format de tournoi de lutte.",
@@ -20,7 +21,7 @@
         ],
         "details": [
           {
-            "title": "role",
+            "title": "Rôle",
             "text": "Booker, monteur, recherchiste, projectionniste, animateur"
           },
           {
@@ -36,6 +37,7 @@
       {
         "project": "pcq",
         "name": "Le Petit Cinéma Qualité+",
+        "period": "Depuis 2014",
         "cover": "shows/pcq/shows-pcq-cover.jpg",
         "description": [
           "Fort de plus de 50 projections au travers le Québec et l'Europe, le Petit Cinéma Qualité est une projection itinérante et improvisée dont vous êtes le héros/l'héroïne.",
@@ -49,7 +51,7 @@
         ],
         "details": [
           {
-            "title": "role",
+            "title": "Rôle",
             "text": "Booker, monteur, recherchiste, projectionniste, animateur"
           },
           {
@@ -65,6 +67,7 @@
       {
         "project": "karaoken",
         "name": "Le Karaoken",
+        "period": "Depuis 2024",
         "cover": "shows/karaoken/shows-karaoken-cover.jpg",
         "description": [
           "Ma version de l'animation d'un karaoké: des extraits de vidéos louches entre chaque chanteur, une playlist remplie à ras bord de plaisirs coupables et du air drum TRÈS approximatif.",
@@ -77,7 +80,7 @@
         ],
         "details": [
           {
-            "title": "role",
+            "title": "Rôle",
             "text": "Booker, animateur"
           },
           {

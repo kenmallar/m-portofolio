@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+h1,
+h4,
+h5 {
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+h2 {
+}
+
+h3 {
+}
+
+h4 {
+  margin-bottom: 0.75rem;
+}
+
+h5 {
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+p {
+  margin: 0 0 1rem;
+  font-weight: 100;
+  line-height: 1.4;
+  color: var(--white);
+}

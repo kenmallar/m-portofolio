@@ -1,0 +1,8 @@
+.project-gallery {
+  .project-gallery__list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

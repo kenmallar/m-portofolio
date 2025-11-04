@@ -1,5 +1,9 @@
 .container {
   margin: 0 auto;
   width: 100%;
-  max-width: 1350px;
+  max-width: 58rem;
+
+  &.container--large {
+    max-width: 85rem;
+  }
 }

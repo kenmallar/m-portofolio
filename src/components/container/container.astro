@@ -1,7 +1,11 @@
 ---
 import "./container.css";
+
+const { size, className } = Astro.props;
+
+const classes = `container ${size ? `container--${size}` : ""} ${className} `;
 ---
 
-<div class="container">
+<div class={classes}>
   <slot />
 </div>

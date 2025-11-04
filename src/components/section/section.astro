@@ -9,10 +9,6 @@ const { category, title, projects } = Astro.props;
 <section class="section">
   <h3 class="section__title" id={category}>{title}</h3>
   <Cards>
-    {
-      projects.map((p: any) => (
-        <Card id={p.project} name={p.name} cover={p.cover} />
-      ))
-    }
+    {projects.map((p: any) => <Card id={p.project} project={p} />)}
   </Cards>
 </section>
