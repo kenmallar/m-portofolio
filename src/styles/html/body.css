@@ -8,7 +8,8 @@ body {
   font-family: "Mulish", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
-
+  background-color: var(--background);
+  color: var(--text-color);
   * {
     box-sizing: border-box;
   }

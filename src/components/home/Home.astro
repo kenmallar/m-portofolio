@@ -8,23 +8,35 @@ import { frontend } from "@data/frontend.json";
 import { music } from "@data/music.json";
 import { shows } from "@data/shows.json";
 
+import "./home.css";
+
 const categories = [frontend, shows, music];
 ---
 
-<Container size="large">
-  <Header />
-  <Main>
-    <div class="sections">
-      {
-        categories.map((c) => (
-          <Section
-            category={c.category}
-            title={c.title}
-            projects={c.projects}
-          />
-        ))
-      }
+<div class="home">
+  <Container size="large">
+    <Header />
+    <div class="hero">
+      <div class="hero__subtitle">Salut, c'est</div>
+      <h1 class="hero__title">KEN MALLAR</h1>
+      <div class="hero__skills">
+        Dev Front-End <span>//</span> Illustrateur <span>//</span> Producteur de
+        Spectacles
+      </div>
     </div>
-  </Main>
-  <Footer />
-</Container>
+    <Main>
+      <div class="sections">
+        {
+          categories.map((c) => (
+            <Section
+              category={c.category}
+              title={c.title}
+              projects={c.projects}
+            />
+          ))
+        }
+      </div>
+    </Main>
+    <Footer />
+  </Container>
+</div>

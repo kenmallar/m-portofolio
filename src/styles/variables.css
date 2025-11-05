@@ -1,6 +1,9 @@
 :root {
-  --highlight: #bb1d74;
   --white: #ffffff;
+
+  --background: #050505;
+  --text-color: var(--white);
+  --highlight: #bb1d74;
   /* --primary-color: #0b0e18;
   --duration: 0.3s; 
   --body-bg-color: #605f5f; 
