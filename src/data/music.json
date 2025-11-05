@@ -8,12 +8,12 @@
         "project": "scuze",
         "name": "SCUZE!",
         "period": "2025",
-        "cover": "music/scuze/music-scuze-cover.jpg",
+        "cover": "/music/scuze/music-scuze-cover.jpg",
         "description": [
           "Formé sur les cendres de mes précédentes formations musicales Personne et Super Punk, SCUZE! mise sur ses gimmicks et autres vers d’oreilles pour happer le public avec sa “musique normale”:  un son composé de claviers malicieux, d’extraits audio discutables, de guitares fortes et de mélodies francophones.",
           "Notre premier EP sorti en mars 2025 “Content d’être là”, ancre très bien le groupe dans le paysage musical montréalais et appuie clairement la citation du Dr Spengler: “Ça prend la forme que ça veut”."
         ],
-        "pics": ["music/scuze/music-scuze-1.jpg"],
+        "pics": ["/music/scuze/music-scuze-1.jpg"],
         "details": [
           {
             "title": "Role",
@@ -28,14 +28,14 @@
       {
         "project": "costauds",
         "name": "Les Costauds",
-        "cover": "music/costauds/music-costauds-cover.jpg",
+        "cover": "/music/costauds/music-costauds-cover.jpg",
         "period": "2017 - 2018",
         "description": [
           "C'est suite à une projection de mon projet Le Petit Cinéma Qualité+ que j'ai fait la rencontre de Simon Portelance, qui me demanda ce qu'étaient les Musclés, groupe de variété chessy français.",
           "Quelques mois et plusieurs pratiques plus tard, je me suis retrouvé bassiste du seul groupe de reprises du Club Dorothée au Québec.",
           "C'était vraiment le fun à jouer. Vous devriez essayer."
         ],
-        "pics": ["music/costauds/music-costauds-1.jpg"],
+        "pics": ["/music/costauds/music-costauds-1.jpg"],
         "details": [
           {
             "title": "Role",
@@ -50,13 +50,13 @@
       {
         "project": "superpunk",
         "name": "Super Punk",
-        "cover": "music/superpunk/music-superpunk-cover.jpg",
+        "cover": "/music/superpunk/music-superpunk-cover.jpg",
         "period": "2015 - 2019",
         "description": [
           "22 titres en moins de 30 minutes, c'est ce que vous pourrez trouver sur l'album \"Kim Jong Goes to Cégep\", l'album de ce all-star band québécois, composé de membres de plusieurs formations punk de la belle province.",
           "Le vidéoclip du titre \"La CAQ va sauver le monde\", nous a quand même valu un passage à Infoman."
         ],
-        "pics": ["music/superpunk/music-superpunk-1.jpg"],
+        "pics": ["/music/superpunk/music-superpunk-1.jpg"],
         "details": [
           {
             "title": "Role",
@@ -71,12 +71,12 @@
       {
         "project": "personne",
         "name": "Personne",
-        "cover": "music/personne/music-personne-cover.jpg",
+        "cover": "/music/personne/music-personne-cover.jpg",
         "period": "2010 - 2013",
         "description": [
           "Formation musicale basée en France forte d'une cinquantaine de concerts au travers l'Europe, Personne représente la première base de mon expérience à la création musicale, au management et au booking."
         ],
-        "pics": ["music/personne/music-personne-1.jpg"],
+        "pics": ["/music/personne/music-personne-1.jpg"],
         "details": [
           {
             "title": "Role",
@@ -91,12 +91,12 @@
       {
         "project": "gxp",
         "name": "Guerilla Poubelle",
-        "cover": "music/gxp/music-gxp-cover.jpg",
+        "cover": "/music/gxp/music-gxp-cover.jpg",
         "period": "2008 - 2012",
         "description": [
           "Mon bout de chemin avec la célèbre formation punk parisienne m'a fait mettre le pied dans cet impitoyable monde de la tournée, au travers d'une centaine de concerts au coté d'artistes de la relève comme Rancid, Toy Dolls et Catherine Ringer."
         ],
-        "pics": ["music/gxp/music-gxp-1.jpg"],
+        "pics": ["/music/gxp/music-gxp-1.jpg"],
         "details": [
           {
             "title": "Role",

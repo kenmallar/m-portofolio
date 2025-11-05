@@ -5,8 +5,6 @@ body {
   min-height: 100dvh;
   justify-content: flex-start;
   position: relative;
-  background-color: var(--body-bg-color);
-  color: var(--primary-color);
   font-family: "Mulish", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;

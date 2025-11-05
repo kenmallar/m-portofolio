@@ -1,7 +1,7 @@
 ---
 import Container from "@components/container/container.astro";
 import Header from "@components/header/header.astro";
-import { GallerySwiper } from "@components/swiper/swiper";
+import { GallerySwiper } from "@components/swiper/GallerySwiper";
 import { frontend } from "@data/frontend.json";
 import { music } from "@data/music.json";
 import { shows } from "@data/shows.json";
@@ -32,13 +32,15 @@ const { name, description, period, pics, details, link } = Astro.props;
     <span class="p-project__period">{period}</span>
   </Container>
 
-  {
-    pics.length > 1 ? (
-      <GallerySwiper pictures={pics} projectName={name} client:load />
-    ) : (
-      <img src={pics[0]} alt={name} />
-    )
-  }
+  <Container>
+    {
+      pics.length > 1 ? (
+        <GallerySwiper pictures={pics} projectName={name} client:load />
+      ) : (
+        <img class="p-project__image" src={pics[0]} alt={name} />
+      )
+    }
+  </Container>
 
   <Container className="project__container">
     <div class="p-project__description">

@@ -1,12 +1,13 @@
-.gallery-swiper {
+.swiper {
   width: 100%;
   height: auto;
 
-  .swiper-slide img {
-    width: 100%;
-    max-width: 900px;
-
-    height: auto;
+  .swiper-slide {
+    img {
+      width: 100%;
+      max-width: 900px;
+      height: auto;
+    }
   }
 
   &.swiper-free-mode > .swiper-wrapper {

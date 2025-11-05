@@ -18,11 +18,11 @@ export const GallerySwiper: FC<Props> = ({ pictures, projectName }) => {
     <Swiper
       className="gallery-swiper"
       modules={[Scrollbar, Autoplay, FreeMode, A11y]}
-      spaceBetween={100}
-      speed={pictures.length * 1000}
+      spaceBetween={0}
+      speed={10000}
       slidesPerView={1}
       scrollbar={{ draggable: true, hide: true }}
-      autoplay
+      autoplay={{ delay: 0 }}
       freeMode
       loop
     >

@@ -1,8 +1,13 @@
 .nav {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+
+  @media (min-width: 769px) {
+    flex-wrap: nowrap;
+  }
 
   .nav__link {
     text-decoration: none;
