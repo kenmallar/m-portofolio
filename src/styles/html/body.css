@@ -1,7 +1,4 @@
 body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   min-height: 100dvh;
   justify-content: flex-start;
   position: relative;
@@ -10,6 +7,8 @@ body {
   font-weight: 400;
   background-color: var(--background);
   color: var(--text-color);
+  overflow-x: hidden;
+
   * {
     box-sizing: border-box;
   }

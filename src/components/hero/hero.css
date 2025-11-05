@@ -1,0 +1,33 @@
+.hero {
+  container-type: size;
+  display: flex;
+  flex-direction: column;
+  height: max(60vh, 200px);
+  margin-bottom: 4rem;
+  justify-content: center;
+
+  span {
+    color: var(--highlight);
+  }
+
+  .hero__title {
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 0.85;
+    font-size: 19cqw;
+  }
+
+  .hero__subtitle,
+  .hero__skills {
+    font-size: 2rem;
+    line-height: 1.5;
+    font-weight: 100;
+    margin-left: 0.5rem;
+    text-transform: uppercase;
+    font-size: max(1rem, 1.5cqw);
+  }
+  .hero__skills {
+    text-align: right;
+  }
+}

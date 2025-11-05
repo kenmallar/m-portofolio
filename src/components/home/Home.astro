@@ -2,12 +2,12 @@
 import Container from "@components/container/container.astro";
 import Footer from "@components/footer/footer.astro";
 import Header from "@components/header/header.astro";
+import Hero from "@components/hero/hero.astro";
 import Main from "@components/main/main.astro";
 import Section from "@components/section/section.astro";
 import { frontend } from "@data/frontend.json";
 import { music } from "@data/music.json";
 import { shows } from "@data/shows.json";
-
 import "./home.css";
 
 const categories = [frontend, shows, music];
@@ -16,14 +16,7 @@ const categories = [frontend, shows, music];
 <div class="home">
   <Container size="large">
     <Header />
-    <div class="hero">
-      <div class="hero__subtitle">Salut, c'est</div>
-      <h1 class="hero__title">KEN MALLAR</h1>
-      <div class="hero__skills">
-        Dev Front-End <span>//</span> Illustrateur <span>//</span> Producteur de
-        Spectacles
-      </div>
-    </div>
+    <Hero />
     <Main>
       <div class="sections">
         {

@@ -1,0 +1,30 @@
+.home-swiper {
+  --swiper-pagination-bottom: 0.7rem;
+  --swiper-pagination-bullet-inactive-opacity: 0.4;
+
+  width: 100%;
+  flex: 1;
+
+  @media (min-width: 1025px) {
+    width: 50%;
+  }
+
+  .swiper-wrapper {
+    border-radius: 15px;
+    padding-bottom: 2rem;
+  }
+
+  .swiper-slide {
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 15px;
+    }
+  }
+
+  .swiper-pagination-bullet {
+    bottom: 0.75rem;
+    background: var(--highlight);
+  }
+}

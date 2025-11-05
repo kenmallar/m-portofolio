@@ -4,6 +4,10 @@
   --background: #050505;
   --text-color: var(--white);
   --highlight: #bb1d74;
+
+  --mq-desktop: 1025px;
+  --mq-tablet: 769px;
+  --mq-mobile: 480px;
   /* --primary-color: #0b0e18;
   --duration: 0.3s; 
   --body-bg-color: #605f5f; 

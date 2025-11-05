@@ -1,0 +1,52 @@
+---
+import Container from "@components/container/container.astro";
+import Footer from "@components/footer/footer.astro";
+import Header from "@components/header/header.astro";
+import Hero from "@components/hero/hero.astro";
+import { HomeSwiper } from "@components/homeSwiper/HomeSwiper";
+import { frontend } from "@data/frontend.json";
+import { music } from "@data/music.json";
+import { shows } from "@data/shows.json";
+import "./home.css";
+---
+
+<div class="home">
+  <Container size="large">
+    <Header />
+    <Hero />
+  </Container>
+
+  <div class="home__projects">
+    <div class="home__project">
+      <h3 class="home__project-title">Projets<br />Front-End</h3>
+      <HomeSwiper projects={frontend.projects} client:load />
+    </div>
+
+    <div class="home__project">
+      <h3 class="home__project-title">Spectacles</h3>
+      <HomeSwiper projects={shows.projects} client:load />
+    </div>
+
+    <div class="home__project">
+      <h3 class="home__project-title">Projets<br />Musicaux</h3>
+      <HomeSwiper projects={music.projects} client:load />
+    </div>
+  </div>
+</div>
+
+<!-- <Container size="large">
+  <Main>
+    <div class="sections">
+      {
+        categories.map((c) => (
+          <Section
+            category={c.category}
+            title={c.title}
+            projects={c.projects}
+          />
+        ))
+      }
+    </div>
+  </Main>
+  </Container> -->
+<Footer />
