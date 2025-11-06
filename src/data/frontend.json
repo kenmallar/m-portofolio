@@ -8,7 +8,7 @@
         "project": "please-fix",
         "name": "Please Fix",
         "period": "2019 - 2025",
-        "cover": "fe/pf/fe-pf-cover.jpg",
+        "cover": "/fe/pf/fe-pf-cover.jpg",
         "description": [
           "J'ai rejoint l'équipe du projet PleaseFix en 2019 avec pour mandat de créer le thème principal de l'application, de façon à pouvoir l'offrir à toute taille de studio, du AAA au studio indépendant.",
           "Durant cette mission, j'ai mis en place une standardisation des pratiques de développement de composants UI, un flux de production et renforcé la communication entre développeurs et designers, notamment grâce à l'utilisation de Storybook.",
@@ -34,7 +34,7 @@
         "project": "nvizzio",
         "name": "Nvizzio",
         "period": "2020",
-        "cover": "fe/nvizzio/fe-nvizzio-cover.jpg",
+        "cover": "/fe/nvizzio/fe-nvizzio-cover.jpg",
         "description": [
           "Pour le compte de l'agence Kantaloup, j'ai repris le travail de développement de certaines sections du site de son client, le studio de jeux vidéos montréalais Nvizzio."
         ],
@@ -58,7 +58,7 @@
         "project": "ohrwurm",
         "name": "Ohrwurm",
         "period": "2020",
-        "cover": "fe/earworm/fe-earworm-cover.jpg",
+        "cover": "/fe/earworm/fe-earworm-cover.jpg",
         "description": [
           "La pandémie nous ayant pris par surprise, j'ai eu l'occasion de me former sur Vue 2 en mettant en place qui me tenait à coeur depuis quelques années.",
           "En effet, je voulais créer un projet dans lequel j'allierais mon style d'illustrateur, mon amour pour la recherche de vidéos louches et le développement web.",
@@ -85,7 +85,7 @@
         "project": "revera",
         "name": "Revera",
         "period": "2019",
-        "cover": "fe/revera/fe-revera-cover.jpg",
+        "cover": "/fe/revera/fe-revera-cover.jpg",
         "description": [
           "Pour le compte de l'agence Sidlee, j'ai été mandaté par l'agence pour aider l'équipe au développement du site de son client Revera."
         ],
@@ -109,7 +109,7 @@
         "project": "utown",
         "name": "Utown",
         "period": "2020",
-        "cover": "fe/utown/fe-utown-cover.jpg",
+        "cover": "/fe/utown/fe-utown-cover.jpg",
         "description": [
           "Afin de faire revenir la tendance du webcomic sur la toile, j'ai développé pour la bédéiste Cab un site Wordpress sur lequel elle pourrait publier son prochain ouvrage, Utown."
         ],
