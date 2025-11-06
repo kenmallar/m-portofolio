@@ -3,6 +3,12 @@
   flex-direction: column;
   gap: 1rem;
   flex: 1;
+  padding-bottom: 5.5rem;
+
+
+    @media (min-width: 769px) {
+      padding-bottom: 0;
+    }
 
   .p-project__container {
     display: flex;
@@ -85,4 +91,6 @@
       margin-bottom: 0;
     }
   }
+
+  .header { position: relative; padding: 1rem 0 0;}
 }

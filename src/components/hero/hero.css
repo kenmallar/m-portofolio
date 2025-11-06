@@ -2,10 +2,10 @@
   container-type: size;
   display: flex;
   flex-direction: column;
-  height: max(60vh, 200px);
+  height: max(100dvh, 200px);
   margin-bottom: 4rem;
   justify-content: center;
-
+  
   span {
     color: var(--highlight);
   }

@@ -1,5 +1,5 @@
 ---
-const { className, name } = Astro.props;
+const { className, metaTitle } = Astro.props;
 ---
 
 <!doctype html>
@@ -9,7 +9,7 @@ const { className, name } = Astro.props;
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    <title>Ken Mallar • {name}</title>
+    <title>Ken Mallar • {metaTitle}</title>
   </head>
   <body class={className}>
     <slot />

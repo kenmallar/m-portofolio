@@ -33,13 +33,14 @@ const { name, description, period, pics, details, link } = Astro.props;
   </Container>
 
   <Container>
-    {
+    <!-- {
       pics.length > 1 ? (
         <GallerySwiper pictures={pics} projectName={name} client:load />
       ) : (
         <img class="p-project__image" src={pics[0]} alt={name} />
-      )
-    }
+        )
+        } -->
+    <img class="p-project__image" src={pics[0]} alt={name} />
   </Container>
 
   <Container className="project__container">

@@ -18,15 +18,16 @@ export const HomeSwiper: FC<Props> = ({ projects }) => {
     <Swiper
       className="home-swiper"
       modules={[Scrollbar, Pagination, Autoplay, A11y]}
-      speed={500}
+      speed={1000}
       spaceBetween={50}
-      slidesPerView={3}
       breakpoints={{
+        480: {
+          slidesPerView: 2,
+        },
         1025: {
           slidesPerView: 3,
         },
       }}
-      autoplay
       pagination={{ enabled: true, clickable: true }}
       loop
     >
