@@ -3,33 +3,71 @@ import Container from "@components/container/container.astro";
 import Footer from "@components/footer/footer.astro";
 import Header from "@components/header/header.astro";
 import Hero from "@components/hero/hero.astro";
-import Main from "@components/main/main.astro";
-import Section from "@components/section/section.astro";
+import { HomeSwiper } from "@components/homeSwiper/HomeSwiper";
 import { frontend } from "@data/frontend.json";
 import { music } from "@data/music.json";
 import { shows } from "@data/shows.json";
 import "./home.css";
-
-const categories = [frontend, shows, music];
 ---
 
-<div class="home" transition:animate="slide">
-  <Container size="large">
-    <Header />
-    <Hero />
-    <Main>
-      <div class="sections">
-        {
-          categories.map((c) => (
-            <Section
-              category={c.category}
-              title={c.title}
-              projects={c.projects}
-            />
-          ))
-        }
+<div id="smooth-wrapper">
+  <div id="smooth-content">
+    <div class="home">
+      <Header />
+      <Container size="large">
+        <Hero />
+      </Container>
+
+      <div class="home__projects">
+        <div class="home__project">
+          <h3 class="home__project-title">Projets<br />Front-End</h3>
+          <HomeSwiper projects={frontend.projects} client:load />
+        </div>
+
+        <div class="home__project">
+          <h3 class="home__project-title">Spectacles</h3>
+          <HomeSwiper projects={shows.projects} client:load />
+        </div>
+
+        <div class="home__project">
+          <h3 class="home__project-title">Projets<br />Musicaux</h3>
+          <HomeSwiper projects={music.projects} client:load />
+        </div>
       </div>
-    </Main>
+    </div>
+
     <Footer />
-  </Container>
+  </div>
 </div>
+
+<script>
+  import { gsap } from "gsap";
+  import { ScrollSmoother } from "gsap/ScrollSmoother";
+  import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+  gsap.registerPlugin(ScrollSmoother, ScrollTrigger);
+
+  let skewSetter = gsap.quickTo(
+      [".header", ".hero", ".home__project"],
+      "skewY"
+    ), // fast
+    clamp = gsap.utils.clamp(-2, 2); // don't let the skew go beyond 20 degrees.
+
+  ScrollSmoother.create({
+    wrapper: "#wrapper",
+    content: "#content",
+    smooth: 1,
+    speed: 3,
+    effects: true,
+    onUpdate: (self) => skewSetter(clamp(self.getVelocity() / -100)),
+    onStop: () => skewSetter(0),
+  });
+
+  let tl = gsap.timeline();
+
+  tl.fromTo(".hero__subtitle", { opacity: 0 }, { duration: 0.75, opacity: 1 })
+    .fromTo(".hero__title", { opacity: 0 }, { duration: 0.75, opacity: 1 })
+    .fromTo(".hero__skills", { opacity: 0 }, { duration: 0.75, opacity: 1 });
+
+  console.log("Using GSAP version:", gsap.version);
+</script>

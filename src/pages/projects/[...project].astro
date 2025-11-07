@@ -1,7 +1,5 @@
 ---
 import Container from "@components/container/container.astro";
-import { GallerySwiper } from "@components/gallerySwiper/GallerySwiper";
-import Header from "@components/header/header.astro";
 import { frontend } from "@data/frontend.json";
 import { music } from "@data/music.json";
 import { shows } from "@data/shows.json";
@@ -26,20 +24,15 @@ const { name, description, period, pics, details, link } = Astro.props;
 ---
 
 <Layout className="p-project" name={name}>
-  <Container>
-    <Header hideNav />
-    <h1 class="p-project__title">{name}</h1>
-    <span class="p-project__period">{period}</span>
+  <Container className="p-project__header">
+    <div>
+      <h1 class="p-project__title">{name}</h1>
+      <span class="p-project__period">{period}</span>
+    </div>
+    <a class="p-project__back" href="/"></a>
   </Container>
 
   <Container>
-    <!-- {
-      pics.length > 1 ? (
-        <GallerySwiper pictures={pics} projectName={name} client:load />
-      ) : (
-        <img class="p-project__image" src={pics[0]} alt={name} />
-        )
-        } -->
     <img class="p-project__image" src={pics[0]} alt={name} />
   </Container>
 
@@ -86,6 +79,5 @@ const { name, description, period, pics, details, link } = Astro.props;
         {description.map((p) => <p>{p}</p>)}
       </div>
     </div>
-    <a class="p-project__back" href="/">← Retour</a>
   </Container>
 </Layout>

@@ -3,7 +3,7 @@ import "./container.css";
 
 const { size, className } = Astro.props;
 
-const classes = `container ${size ? `container--${size}` : ""} ${className} `;
+const classes = `container ${size ? `container--${size}` : ""} ${className ? className : ""} `;
 ---
 
 <div class={classes}>

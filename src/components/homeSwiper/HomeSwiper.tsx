@@ -34,7 +34,7 @@ export const HomeSwiper: FC<Props> = ({ projects }) => {
       {projects.map((p: any) => (
         <SwiperSlide>
           <a href={`projects/` + p.project}>
-            <img src={p.cover} />
+            <img src={p.cover} loading="lazy" />
           </a>
         </SwiperSlide>
       ))}
