@@ -1,10 +1,10 @@
-import { A11y, Autoplay, Pagination, Scrollbar } from "swiper/modules";
+import { A11y, Autoplay, Navigation, Scrollbar } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import type { FC } from "react";
 import "swiper/css";
 import "swiper/css/autoplay";
-import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 import "swiper/css/scrollbar";
 import "./homeSwiper.css";
@@ -17,7 +17,7 @@ export const HomeSwiper: FC<Props> = ({ projects }) => {
   return (
     <Swiper
       className="home-swiper"
-      modules={[Scrollbar, Pagination, Autoplay, A11y]}
+      modules={[Scrollbar, Navigation, Autoplay, A11y]}
       speed={1000}
       spaceBetween={50}
       breakpoints={{
@@ -28,7 +28,7 @@ export const HomeSwiper: FC<Props> = ({ projects }) => {
           slidesPerView: 3,
         },
       }}
-      pagination={{ enabled: true, clickable: true }}
+      navigation={{ enabled: true }}
       loop
     >
       {projects.map((p: any) => (

@@ -1,4 +1,7 @@
 ---
+import ClientRouter from "astro/components/ClientRouter.astro";
+import SpaceGrid from "../fx/spaceGrid/spaceGrid";
+
 const { className, metaTitle } = Astro.props;
 ---
 
@@ -10,8 +13,17 @@ const { className, metaTitle } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>Ken Mallar • {metaTitle}</title>
+    <ClientRouter />
   </head>
   <body class={className}>
     <slot />
+    <SpaceGrid
+      speed={0.5}
+      squareSize={100}
+      direction="diagonal"
+      borderColor="#83288f"
+      hoverFillColor={undefined}
+      client:load
+    />
   </body>
 </html>

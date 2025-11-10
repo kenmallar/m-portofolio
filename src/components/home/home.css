@@ -24,6 +24,17 @@
     &:nth-child(even) {
       margin: 0 auto 0 0;
 
+      @media (min-width: 769px) {
+        .swiper-button-next,
+        .swiper-button-prev {
+          right: 0;
+          left: auto;
+        }
+        .swiper-button-prev {
+          right: 2rem;
+        }
+      }
+
       @media (min-width: 1025px) {
         padding: 0 1.5rem 0 0;
         flex-direction: row-reverse;

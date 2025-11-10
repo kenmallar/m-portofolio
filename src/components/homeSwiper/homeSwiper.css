@@ -1,6 +1,8 @@
 .home-swiper {
-  --swiper-pagination-bottom: 0.7rem;
-  --swiper-pagination-bullet-inactive-opacity: 0.4;
+  --swiper-theme-color: var(--highlight);
+  --swiper-navigation-size: 1.5rem;
+  --swiper-navigation-sides-offset: 0;
+  --swiper-navigation-top-offset: auto;
 
   width: 100%;
   flex: 1;
@@ -11,7 +13,7 @@
 
   .swiper-wrapper {
     border-radius: 15px;
-    padding-bottom: 2rem;
+    padding-bottom: 2.5rem;
   }
 
   .swiper-slide {
@@ -23,8 +25,12 @@
     }
   }
 
-  .swiper-pagination-bullet {
-    bottom: 0.75rem;
-    background: var(--highlight);
+  .swiper-button-prev,
+  .swiper-button-next {
+    bottom: 0;
+  }
+
+  .swiper-button-next {
+    left: 2rem;
   }
 }

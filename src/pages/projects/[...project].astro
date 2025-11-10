@@ -33,10 +33,10 @@ const { name, description, period, pics, details, link } = Astro.props;
   </Container>
 
   <Container>
-    <img class="p-project__image" src={pics[0]} alt={name} />
+    <img class="p-project__image" src={pics[0]} alt={name} loading="lazy" />
   </Container>
 
-  <Container className="project__container">
+  <Container>
     <div class="p-project__description">
       <div class="p-project__details">
         {
@@ -81,3 +81,15 @@ const { name, description, period, pics, details, link } = Astro.props;
     </div>
   </Container>
 </Layout>
+
+<script>
+  import { gsap } from "gsap";
+
+  let tl = gsap.timeline();
+
+  const animationParams = { duration: 0.4, opacity: 1 };
+
+  tl.fromTo(".p-project__header", { opacity: 0 }, animationParams)
+    .fromTo(".p-project__image", { opacity: 0 }, animationParams)
+    .fromTo(".p-project__description", { opacity: 0 }, animationParams);
+</script>

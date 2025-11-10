@@ -65,9 +65,12 @@ import "./home.css";
 
   let tl = gsap.timeline();
 
-  tl.fromTo(".hero__subtitle", { opacity: 0 }, { duration: 0.75, opacity: 1 })
+  tl.fromTo(
+    ".hero__subtitle",
+    { opacity: 0 },
+    { delay: 0.5, duration: 0.75, opacity: 1 }
+  )
     .fromTo(".hero__title", { opacity: 0 }, { duration: 0.75, opacity: 1 })
-    .fromTo(".hero__skills", { opacity: 0 }, { duration: 0.75, opacity: 1 });
-
-  console.log("Using GSAP version:", gsap.version);
+    .fromTo(".hero__skills", { opacity: 0 }, { duration: 0.75, opacity: 1 })
+    .fromTo(".header", { opacity: 0 }, { duration: 0.3, opacity: 1 });
 </script>
