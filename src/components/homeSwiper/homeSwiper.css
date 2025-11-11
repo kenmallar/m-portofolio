@@ -1,5 +1,5 @@
 .home-swiper {
-  --swiper-theme-color: var(--highlight);
+  --swiper-theme-color: var(--white);
   --swiper-navigation-size: 1.5rem;
   --swiper-navigation-sides-offset: 0;
   --swiper-navigation-top-offset: auto;
