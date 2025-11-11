@@ -10,67 +10,28 @@ import { shows } from "@data/shows.json";
 import "./home.css";
 ---
 
-<div id="smooth-wrapper">
-  <div id="smooth-content">
-    <div class="home">
-      <Header />
-      <Container size="large">
-        <Hero />
-      </Container>
+<div class="home">
+  <Header />
+  <Container size="large">
+    <Hero />
+  </Container>
 
-      <div class="home__projects">
-        <div class="home__project">
-          <h3 class="home__project-title">Projets<br />Front-End</h3>
-          <HomeSwiper projects={frontend.projects} client:load />
-        </div>
-
-        <div class="home__project">
-          <h3 class="home__project-title">Spectacles</h3>
-          <HomeSwiper projects={shows.projects} client:load />
-        </div>
-
-        <div class="home__project">
-          <h3 class="home__project-title">Projets<br />Musicaux</h3>
-          <HomeSwiper projects={music.projects} client:load />
-        </div>
-      </div>
+  <div class="home__projects">
+    <div class="home__project">
+      <h3 class="home__project-title">Projets<br />Front-End</h3>
+      <HomeSwiper projects={frontend.projects} client:load />
     </div>
 
-    <Footer />
+    <div class="home__project">
+      <h3 class="home__project-title">Spectacles</h3>
+      <HomeSwiper projects={shows.projects} client:load />
+    </div>
+
+    <div class="home__project">
+      <h3 class="home__project-title">Projets<br />Musicaux</h3>
+      <HomeSwiper projects={music.projects} client:load />
+    </div>
   </div>
 </div>
 
-<script>
-  import { gsap } from "gsap";
-  import { ScrollSmoother } from "gsap/ScrollSmoother";
-  import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-  gsap.registerPlugin(ScrollSmoother, ScrollTrigger);
-
-  let skewSetter = gsap.quickTo(
-      [".header", ".hero", ".home__project"],
-      "skewY"
-    ), // fast
-    clamp = gsap.utils.clamp(-2, 2); // don't let the skew go beyond 20 degrees.
-
-  ScrollSmoother.create({
-    wrapper: "#wrapper",
-    content: "#content",
-    smooth: 1,
-    speed: 3,
-    effects: true,
-    onUpdate: (self) => skewSetter(clamp(self.getVelocity() / -100)),
-    onStop: () => skewSetter(0),
-  });
-
-  let tl = gsap.timeline();
-
-  tl.fromTo(
-    ".hero__subtitle",
-    { opacity: 0 },
-    { delay: 0.5, duration: 0.75, opacity: 1 }
-  )
-    .fromTo(".hero__title", { opacity: 0 }, { duration: 0.75, opacity: 1 })
-    .fromTo(".hero__skills", { opacity: 0 }, { duration: 0.75, opacity: 1 })
-    .fromTo(".header", { opacity: 0 }, { duration: 0.3, opacity: 1 });
-</script>
+<Footer />

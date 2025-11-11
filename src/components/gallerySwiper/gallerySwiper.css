@@ -1,16 +1,18 @@
 .swiper {
+  --swiper-theme-color: var(--highlight);
+  --swiper-pagination-bullet-inactive-opacity: 1;
+  --swiper-pagination-bullet-opacity: 0.5;
+  --swiper-pagination-bullet-inactive-color: var(--highlight);
+  --swiper-pagination-bullet-size: 0.5rem;
+
   width: 100%;
   height: auto;
 
-  .swiper-slide {
-    img {
-      width: 100%;
-      max-width: 900px;
-      height: auto;
-    }
-  }
-
-  &.swiper-free-mode > .swiper-wrapper {
-    transition-timing-function: linear;
+  .swiper-pagination {
+    display: flex;
+    left: 2rem;
+    border-radius: 25px;
+    width: auto;
+    bottom: 1rem;
   }
 }

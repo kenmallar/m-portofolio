@@ -1,10 +1,10 @@
-import { A11y, Autoplay, FreeMode, Scrollbar } from "swiper/modules";
+import { A11y, Autoplay, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import type { FC } from "react";
 import "swiper/css";
 import "swiper/css/autoplay";
-import "swiper/css/free-mode";
+import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "./gallerySwiper.css";
 
@@ -17,13 +17,12 @@ export const GallerySwiper: FC<Props> = ({ pictures, projectName }) => {
   return (
     <Swiper
       className="gallery-swiper"
-      modules={[Scrollbar, Autoplay, FreeMode, A11y]}
-      spaceBetween={0}
-      speed={10000}
+      modules={[Autoplay, Pagination, A11y]}
+      spaceBetween={50}
+      speed={1000}
       slidesPerView={1}
-      scrollbar={{ draggable: true, hide: true }}
-      autoplay={{ delay: 0 }}
-      freeMode
+      autoplay={{ delay: 2000 }}
+      pagination={{ enabled: true, clickable: true }}
       loop
     >
       {pictures.map((p: string) => (

@@ -1,11 +1,12 @@
 ---
+import { fade } from "astro/virtual-modules/transitions.js";
 import "./hero.css";
 ---
 
-<div class="hero" data-speed="0.9">
-  <div class="hero__subtitle">Salut c'est</div>
-  <h1 class="hero__title">KEN MALLAR</h1>
-  <div class="hero__skills">
+<div class="hero" transition:animate={fade({ duration: "1s" })}>
+  <div class="hero__subtitle" transition:persist>Salut c'est</div>
+  <h1 class="hero__title" transition:persist>KEN MALLAR</h1>
+  <div class="hero__skills" transition:persist>
     Dev Front-End <span>//</span> Illustrateur <span>//</span> Producteur de Spectacles
   </div>
 </div>
