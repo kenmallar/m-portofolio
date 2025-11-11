@@ -1,10 +1,11 @@
 ---
+import { GallerySwiper } from "@components/gallerySwiper/GallerySwiper";
 import { frontend } from "@data/frontend.json";
 import { music } from "@data/music.json";
 import { shows } from "@data/shows.json";
 import Layout from "../../layouts/Layout.astro";
 import "../../styles/main.css";
-import "./project.css";
+import "./_project.css";
 
 export function getStaticPaths() {
   const pages = [...music.projects, ...frontend.projects, ...shows.projects];
@@ -22,74 +23,66 @@ export function getStaticPaths() {
 const { name, description, period, pics, details, link } = Astro.props;
 ---
 
-<Layout className="p-project" name={name}>
-  <div class="p-project__description">
-    <div>
-      <h1 class="p-project__title">{name}</h1>
-      <span class="p-project__period">{period}</span>
-    </div>
+<Layout name={name}>
+  <div class="p-project">
+    <div class="p-project__description">
+      <div class="p-project__header">
+        <h1 class="p-project__title">{name}</h1>
+        <span class="p-project__period">{period}</span>
+      </div>
 
-    <div>
-      {description.map((p) => <p>{p}</p>)}
-    </div>
+      <GallerySwiper pictures={pics} projectName={name} client:load />
 
-    <div class="p-project__details">
-      {
-        details.map((detail) => (
-          <div>
-            <h3>{detail.title}</h3>
-            <p>{detail.text}</p>
-          </div>
-        ))
-      }
-      <div>
-        <h3>Liens</h3>
-        <a
-          class="p-project__link"
-          href={link.url}
-          target="_blank"
-          rel="noopener"
-          ><span>{link.label}</span>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            class="bi bi-box-arrow-up-right"
-            viewBox="0 0 16 16"
+      <div class="p-project__text">
+        {description.map((p) => <p>{p}</p>)}
+      </div>
+
+      <div class="p-project__details">
+        {
+          details.map((detail) => (
+            <div>
+              <h3>{detail.title}</h3>
+              <p>{detail.text}</p>
+            </div>
+          ))
+        }
+        <div>
+          <h3>Liens</h3>
+          <a
+            class="p-project__link"
+            href={link.url}
+            target="_blank"
+            rel="noopener"
+            ><span>{link.label}</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-box-arrow-up-right"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
+              ></path>
+              <path
+                fill-rule="evenodd"
+                d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
+              ></path>
+            </svg></a
           >
-            <path
-              fill-rule="evenodd"
-              d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
-            ></path>
-            <path
-              fill-rule="evenodd"
-              d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
-            ></path>
-          </svg></a
-        >
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="p-project__pics">
-    {
-      pics.map((p) => (
-        <img class="p-project__image" src={p} alt={name} loading="lazy" />
-      ))
-    }
+    <div class="p-project__pics">
+      {
+        pics.map((p) => (
+          <img class="p-project__image" src={p} alt={name} loading="lazy" />
+        ))
+      }
+    </div>
+    <a class="p-project__back" href="/"></a>
   </div>
-  <a class="p-project__back" href="/"></a>
 </Layout>
-
-<!-- <script>
-  import { gsap } from "gsap";
-
-  let tl = gsap.timeline();
-
-  const animationParams = { duration: 0.4, opacity: 1 };
-
-  tl.fromTo(".p-project__header", { opacity: 0 }, animationParams)
-    .fromTo(".p-project__image", { opacity: 0 }, animationParams)
-    .fromTo(".p-project__description", { opacity: 0 }, animationParams);
-</script> -->

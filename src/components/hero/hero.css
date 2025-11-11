@@ -10,12 +10,17 @@
     color: var(--highlight);
   }
 
+  /* *:not(span) {
+    opacity: 0;
+  } */
+
   .hero__title {
     font-family: "Special Gothic Expanded One", sans-serif;
     font-weight: 400;
     font-style: normal;
     line-height: 0.85;
     font-size: 19cqw;
+    /* animation: fadeIn 0.5s 1s linear forwards; */
   }
 
   .hero__subtitle,
@@ -27,7 +32,12 @@
     text-transform: uppercase;
     font-size: max(1rem, 1.5cqw);
   }
+
+  .hero__subtitle {
+    /* animation: fadeIn 0.5s 0.5s linear forwards; */
+  }
   .hero__skills {
     text-align: right;
+    /* animation: fadeIn 0.5s 1.5s linear forwards; */
   }
 }

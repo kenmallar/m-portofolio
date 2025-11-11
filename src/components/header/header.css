@@ -1,10 +1,20 @@
+@keyframes slideIn {
+  from {
+    transform: translateY(0%);
+  }
+
+  to {
+    transform: translateY(100%);
+  }
+}
+
 .header {
   position: absolute;
   top: 0;
   width: 100%;
   max-width: 100rem;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%);
   display: flex;
   align-items: center;
   flex-direction: column;

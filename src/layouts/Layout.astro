@@ -10,7 +10,23 @@ const { className, metaTitle } = Astro.props;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicon/favicon-16x16.png"
+    />
     <meta name="generator" content={Astro.generator} />
     <title>Ken Mallar • {metaTitle}</title>
     <ClientRouter />
@@ -27,3 +43,5 @@ const { className, metaTitle } = Astro.props;
     />
   </body>
 </html>
+
+<script src="/src/js/conversion.js" is:inline></script>
