@@ -1,0 +1,9 @@
+.illustrations {
+  width: 80vw;
+  max-width: 1980px;
+  margin: 0 auto;
+
+  .illustrations__title {
+    padding-top: 2rem;
+  }
+}

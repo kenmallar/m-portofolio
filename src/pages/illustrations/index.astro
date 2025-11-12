@@ -1,0 +1,33 @@
+---
+import { Frame, BalancedMasonryGrid as MasonryGrid } from "@masonry-grid/react";
+
+import Layout from "../../layouts/Layout.astro";
+import "./_illustrations.css";
+---
+
+<Layout name="Illustrations">
+  <div class="illustrations">
+    <h1 class="illustrations__title">Illustrations</h1>
+
+    <MasonryGrid frameWidth={200} gap={10} client:only>
+      <Frame width={4} height={3}>
+        <img src="https://picsum.photos/400/300" alt="Photo 1" />
+      </Frame>
+      <Frame width={1} height={1}>
+        <img src="https://picsum.photos/200/200" alt="Photo 2" />
+      </Frame>
+      <Frame width={3} height={4}>
+        <img src="https://picsum.photos/300/400" alt="Photo 3" />
+      </Frame>
+      <Frame width={3} height={4}>
+        <img src="https://picsum.photos/300/400" alt="Photo 4" />
+      </Frame>
+      <Frame width={1} height={1}>
+        <img src="https://picsum.photos/200/200" alt="Photo 5" />
+      </Frame>
+      <Frame width={4} height={3}>
+        <img src="https://picsum.photos/400/300" alt="Photo 6" />
+      </Frame>
+    </MasonryGrid>
+  </div>
+</Layout>

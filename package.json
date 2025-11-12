@@ -10,12 +10,16 @@
   },
   "dependencies": {
     "@astrojs/react": "^4.4.1",
+    "@masonry-grid/react": "^1.1.1",
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19.2.2",
     "astro": "^5.15.3",
     "gsap": "^3.13.0",
+    "lightgallery": "^2.9.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
+    "react-photo-album": "^3.2.1",
+    "react-plock": "^3.6.1",
     "swiper": "^12.0.3"
   }
 }
